@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="FR-fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Eden School - Gestionnaire de favoris</title>
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🌟 Mes liens favoris</h1>
+
+      <section class="favoris-list">
+        <h2>📚 Liens enregistrés</h2>
+        <ul class="favoris-container">
+          <li>
+            <a href="https://www.edenschool.fr/" target="_blank">Eden School</a>
+            <p class="description">
+              Ecole de développement informatique pour les moins de 18 ans.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="favoris-form">
+        <h2>➕ Ajouter un favori</h2>
+        <form id="favori-form">
+          <label for="titre">Titre</label>
+          <input
+            type="text"
+            id="titre"
+            name="titre"
+            placeholder="Ex : GitHub"
+            required
+          />
+
+          <label for="url">URL</label>
+          <input
+            type="url"
+            id="url"
+            name="url"
+            placeholder="https://..."
+            required
+          />
+
+          <label for="description">Description</label>
+          <textarea
+            id="description"
+            name="description"
+            rows="3"
+            placeholder="Pourquoi ce lien est utile ?"
+            required
+          ></textarea>
+
+          <button type="submit">Ajouter</button>
+        </form>
+      </section>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
